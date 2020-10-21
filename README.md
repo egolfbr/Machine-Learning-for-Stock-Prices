@@ -2,8 +2,8 @@
 For my senior design project at Miami University my team and I set out to try and develop a machine learning algorithm to advise and make stock investments. There were many parameters to consider such as investment amount, length, amount of risk, as well as how we measure that risk and determine probability of profit.
 ## Table of Contents
 **[Introduction](#Introduction)**<br>
-**[Machine Learning Overview](#Machine learning)**<br>
-**[Our Goal](#Our Goal)**<br>
+**[Machine Learning Overview](#Machine-learning)**<br>
+**[Our Goal](#Our-Goal)**<br>
 **[Tools](#Tools)**<br>
 
 ## Introduction
