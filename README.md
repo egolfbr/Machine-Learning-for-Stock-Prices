@@ -30,3 +30,30 @@ For this project we decided to use the python programming language. Python is on
 For our IDE I chose IDLE and Jupyter Notebook. Both of these IDEs have their pros and cons, but I especially like Jupyter because I can run cell by cell to see outputs and gain a deeper understanding of my code.
 ![Python](picture/python.jpg)
 ![Jupyter](picture/jupyter.png)
+
+## Programming 
+
+There are many different types of models and methods to build a successful machine learning algorithm. As mentioned above classification and regression are the two methods that machine learning performs really well. So for the first few trials of programming, I attempted to make a regression algorithm. This is because the goal is to predict future stock prices. I had limited success with this. I created about four different models and only two gave me results that were remotley acceptable. The first models results are below. As you can see, by the end of the short training period I was able to acheive an accpectable loss but not an accecpt able value loss. For this model I used an input layer of 27 neurons, a hidden layer of 15 neurons and an output layer of 1 neuron. For both models I used an activation function of sigmoid on all layers and an optimizer function of sgd on the weights. 
+
+![Image of Machine learning results](picture/results_sigmoid.png)
+
+
+The next trial I conducted was changing the input data to only price and volume. For the above model I trained it using a plethora of technical data compiled in the excel sheet. However, since the technical indicators are already made from price and volume data, presenting a model with the technical data could lead to overtraining since it will have seen the data again just transformed. Those results were not much better.
+
+![Image of Machine learning results](picture/price_vol_results_1.png)
+
+As you can see, the loss is well under 1 (very acceptable) but loss and accuracy are nowhere on the charts. The loss isn't there because the value is too high (in the 1000s) but accuracy isn't there for an unknown reason. Possibly an error in the code. 
+
+After these unpleasant results I did a little more research in predicting values (stock prices) with machine learning. After that I decided to tweak my original model. Instead of having a different amounts of neurons per layer, I made all hidden layers have 15 neurons (choosen at random). I kept the same activation and optimization functions as the previous tests and wound up with much more pleasant result. 
+
+
+![Image of Machine learning results](picture/results_trial3.png)
+
+These results started with a high loss but eventually made it to under 1 which was good. The value loss is still really high and accuracy is still not on the chart but I will tackle one issue at a time. 
+
+The next three trials will be the following: 
+1. Tweak parameters of current model 
+2. Create a model using tensorflow.estimator instead of keras
+3. Create a new dataset to run a classification model instead
+
+You migh be wondering why I would try and run a classification model on something designed to predict the output. Well, instead of thinking about predicting the price we can try and classify a datapoint based on future data. To do this I will add a few columns to the price and volume data set. Each of these columns will contain a 1 or a 0. It will contain a 1 if the price increase X% from a certain time period before and a 0 if it did not increase by that percentage. This way we can ask the user for their investment length and use that column of data to optimize the model. Then we feed the model the price and volume data and have it try and predict if it will be a 1 or a 0, thus a classification model. 
