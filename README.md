@@ -57,7 +57,7 @@ The next three trials will be the following:
 2. Create a model using tensorflow.estimator instead of keras
 3. Create a new dataset to run a classification model instead
 
-You migh be wondering why I would try and run a classification model on something designed to predict the output. Well, instead of thinking about predicting the price we can try and classify a datapoint based on future data. To do this I will add a few columns to the price and volume data set. Each of these columns will contain a 1 or a 0. It will contain a 1 if the price increase X% from a certain time period before and a 0 if it did not increase by that percentage. This way we can ask the user for their investment length and use that column of data to optimize the model. Then we feed the model the price and volume data and have it try and predict if it will be a 1 or a 0, thus a classification model. 
+You might be wondering why I would try and run a classification model on something designed to predict the output. Well, instead of thinking about predicting the price we can try and classify a datapoint based on future data. To do this I will add a few columns to the price and volume data set. Each of these columns will contain a 1 or a 0. It will contain a 1 if the price increase X% from a certain time period before and a 0 if it did not increase by that percentage. This way we can ask the user for their investment length and use that column of data to optimize the model. Then we feed the model the price and volume data and have it try and predict if it will be a 1 or a 0, thus a classification model. 
 
 
 ### Tweak parameters
