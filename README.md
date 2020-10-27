@@ -72,4 +72,5 @@ I learn by getting my hands dirty and by trying examples and experimenting with 
 ### GPU support
 
 Another area where I think I may be able to increase the speed of our algorithm is using GPUs. Right now I am using tensorflow in a Jupyter notebook and not directly on a GPU. The only issues here are that I only have one GPU, and that when I tried to install GPU support for tensorflow, my computer did not like it and threw a bunch of errors at me. This area is worth more trial time and if we get a working model, I think I can get it to work on a GPU to increase speed/latency.
+
 If you have any comments or suggestions please feel free to email me at: bregolf98@gmail.com
