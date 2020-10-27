@@ -14,4 +14,4 @@ The model's training loss eventaually went below 1, but the validation loss indi
 
 For trial 4 I created several models that utilized a few methods I researched that are supposed to help with overfitting and/or vanishing gradient problems. I made limited progress. With this model I was able to get the model to stop overfitting but the vanishing gradient is still an issue. I can tell this is the problem because when looking at the graph for this model, you can see the training loss (labeled 'Loss') goes down to close to 0 (good). But the validation loss (labeled 'val_loss') decreases and then stops decreasing. This likely means that the model has stopped learning. If the model was overfitting, the val_loss line would start to increase again.  Below is an image of the graph and the code is listed in the folder.
 
-![Trial4 image](/picture/trial4_graph.png)
+![Trial4 image]( /picture/trial4_graph.PNG)
