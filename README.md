@@ -61,8 +61,7 @@ The next three trials will be the following:
 
 You might be wondering why I would try and run a classification model on something designed to predict the output. Well, instead of thinking about predicting the price we can try and classify a datapoint based on future data. To do this I will add a few columns to the price and volume data set. Each of these columns will contain a 1 or a 0. It will contain a 1 if the price increase X% from a certain time period before and a 0 if it did not increase by that percentage. This way we can ask the user for their investment length and use that column of data to optimize the model. Then we feed the model the price and volume data and have it try and predict if it will be a 1 or a 0, thus a classification model. 
 
+### RNN
 
-### GPU support
-
-Another area where I think I may be able to increase the speed of our algorithm is using GPUs. Right now I am using tensorflow in a Jupyter notebook and not directly on a GPU. The only issues here are that I only have one GPU, and that when I tried to install GPU support for tensorflow, my computer did not like it and threw a bunch of errors at me. This area is worth more trial time and if we get a working model, I think I can get it to work on a GPU to increase speed/latency.
+Before trying the above mentioned trials, I did a bit more research on specific stock predicting algorithms. What I found was that people found that using recurrent neural networks, worked much better than a feedforward model. A recurrent neural network (RNN) is similar to a feedforward neural network except that it has a feedback loop. This makes the next prediction based on input data as well as the previous time step prediction. Since stock prices are based off of historical data, this looked like a promising solution. 
 
