@@ -41,7 +41,7 @@ The results we got from this model were not great. We learned that the model was
 
 The RNN works very much like a feedforward neural network but there is a feedback loop embedded in the RNN which allows the outputs of RNN or neurons in the RNN to be fed back into the input allowing for the model to make predictions based on historical data that was fed into the system. There are a few different models of RNNs but we chose the long short-term memory model or LSTM model. This is because this model allows the historical data to bypass a lot of the mathematical functions of a neuron and speeds up the training process. Another reason we landed on this model is that there seems to be a good number of DIY algorithm traders that have built their own models using this technique which we drew upon in order to experiment with our model. The LSTM model is good because it allows us to input consecutive historical data and make a prediction about the future which is exactly what we wanted to do. Below you can see a single LSTM neuron as an example.
 
-![LSTM model picture]{height=250px width=250px}(/picture/lstm.png)
+![LSTM model picture](/picture/lstm.png |width=250px height=250px)
 
 As you can see there is a pathway for data at the top that allows for data to be passed back into the neuron and skip the mathematical functions below.
 
